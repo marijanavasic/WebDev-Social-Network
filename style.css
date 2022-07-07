@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/backgroung.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 0 1000px inset;
+}
+.logo {
+    width: 10%;
+    border-radius: 50%;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+h2 {
+   margin-bottom: 15px;
+}
+h1 span{
+    text-transform: capitalize;
+    color: #7DF9FF;
+    text-shadow:1px 1px #fff;
+}
+
+.main-wrapper {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+form div {
+  padding: 10px 0;
+}
+
+form div label {
+    display: flex;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+form div input {
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+form div button{
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #808080;
+}
+ button {
+    cursor: pointer;
+ }
+
+.no-acc-register {
+  margin-top: 20px;
+}
+
+.no-acc-register p {
+    font-size: 16px;   
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.no-acc-register button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #808080;
+}
+
+.custom-modal {
+    display: none;
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, 0.8) 0 0 1000px 1000px;
+    max-width: 500px;
+    padding: 30px;
+    color: #fff;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+.custom-modal button#closeModal {
+    color: #fff;
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    font-weight: bold;
+    height: 20px;
+    margin-right: -380px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+form ul {
+    list-style: none;
+}
+
+form ul li {
+    color: red;
+}
+
+/* Web dev stranica */
+
+.inner-container {
+    border: 1px solid #7DF9FF;
+    padding: 15px;
+}
+
+.inner-container.left-side {
+    text-align: center;
+    color: #fff;
+}
+
+.inner-container.left-side img.profile {
+    width: 70%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.inner-container.left-side button {
+    padding: 2px 20px;
+    
+}
+.inner-container.left-side button:hover {
+    background-color: #7DF9FF;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inner-container.right-side form{
+    display: flex;
+    height: 100px;
+}
+.inner-container.right-side form textarea {
+    width: 85%;
+    border: 0;
+    padding: 15px;
+    outline-color: #7DF9FF;
+    resize: none;
+}
+.inner-container.right-side form button{
+    width: 15%;
+    border: 0;
+    font-size: 18px;
+}
+.inner-container.right-side form button:hover{
+    background-color: #7DF9FF;
+    color: #fff;
+    font-size: 20px;
+}
+
+button#edit:hover {
+    background-color: #7DF9FF;
+    color: white;
+}
+
+button#deleteProfile {
+    border: 2px solid red;
+    color: red;
+    text-transform: uppercase;
+}
+
+button#deleteProfile:hover{
+    background-color: red;
+    color: #fff;
+}
+
+/* Ispisivanje postova na stranici webDev.html  */
+#allPostsWrapper .single-post {
+    background-color: #aaaaaa;
+    padding: 15px;
+    margin-top: 15px;
+    color: #454545 ;
+}
+
+#allPostsWrapper .single-post .post-content {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #454545;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+#allPostsWrapper .single-post .post-actions {
+    display: flex;
+    justify-content: space-between;
+    color: #454545;
+}
+
+#allPostsWrapper .single-post .post-actions div button.like-btn{
+    background-image: url('images/like.png');
+    padding: 5px 15px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 0;
+}
+
+#allPostsWrapper .single-post .post-actions div button.comment-btn {
+    background-image: url('images/comment.png');
+    background-repeat: no-repeat;
+    padding: 5px 15px 5px 40px;
+    border: 0;
+    background-position: 10px;
+}
+#allPostsWrapper .single-post .post-actions div button.remove-btn {
+    border-color: red;
+    color: red;
+    padding: 5px 15px;
+}
+
+#allPostsWrapper .single-post .post-actions div button.remove-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+
+/* Komentari postova  */
+#allPostsWrapper .single-post .post-comments form {
+    height: 30px;
+    margin-top: 15px;
+}
+
+#allPostsWrapper .single-post .post-comments form input {
+    width: 85%;
+    padding: 0 10px;
+}
+
+#allPostsWrapper .single-post .post-comments form button {
+    width: 15%;
+   
+}
+
+#allPostsWrapper .single-post .post-comments {
+    display: none;
+}
+
+#allPostsWrapper .single-post .post-comments .single-comment {
+    border: 2px dotted #7DF9FF;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ccc;
+    color: #454545;
+    text-align: left;
+}
+
+#allPostsWrapper .single-post .post-comments .single-comment p{
+    color: #7DF9FF;
+}
