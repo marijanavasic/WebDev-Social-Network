@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Social Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="images/logo2.jpg" alt="logo" class="logo">
+
+    <h1>Dobrodosli na drustvenu mrezu namenjenu <span>web developerima</span></h1>
+
+<!-- Login forma -->
+    <div class="main-wrapper">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div>
+                <label for="email">Email Adresa:</label>
+                <input type="email" name="email" id="login_email" placeholder="Unesite vasu email adresu">
+            </div>
+            <div>
+                <label for="password">Lozinka:</label>
+                <input type="password" name="password" id="login_lozinka" placeholder="Unesite svoju lozinku">
+            </div>
+            <div>
+                <button>Uloguj se</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="no-acc-register">
+        <p>Nemas nalog?</p>
+        <button id="registracija">Registruj se!</button>
+    </div>
+
+    <!-- Modal za registraciju -->
+<div class="custom-modal">
+    <form id="registrationForm">
+        <button id="closeModal">X</button>
+
+        <div>
+            <label for="korisnicko_ime">Korisnicko ime: *</label>
+            <input type="text" name="korisnicko_ime" id="korisnicko_ime" placeholder="Unesite Vase korisnicko ime...">
+        </div>
+        <div>
+            <label for="email">Email Adresa: *</label>
+            <input type="email" name="email" id="email" placeholder="Unesite Vasu email adresu...">
+        </div>
+        <div>
+            <label for="lozinka">Lozinka: *</label>
+            <input type="password" name="lozinka" id="lozinka" placeholder="Unesite lozinku....">
+        </div>
+        <div>
+            <label for="ponovi_lozinku">Ponovite lozinku: *</label>
+            <input type="password" name="ponovi_lozinku" id="ponovi_lozinku" placeholder="Ponovo unesite istu lozinku...">
+        </div>
+        <div>
+            <button>Registruj se</button>
+        </div>
+    </form>
+</div>
+    
+    <script src="js/Validator.js"></script>
+    <script src="js/Session.js"></script>
+    <script src="js//User.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
